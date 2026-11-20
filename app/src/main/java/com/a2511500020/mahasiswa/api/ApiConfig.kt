@@ -9,7 +9,7 @@ object ApiConfig {
     // BASE_URL sesuaikan dengan server masing-masing.
     // Contoh: server laptop di http:/localhost:8080/pertemuan_6/api/
     // maka untuk emulator gunakan http:/10.0.2.2:8080/pertemuan_6/api/
-    private const val BASE_URL = "http://10.135.153.113/pdcs/pertemuan6/api/"
+    private const val BASE_URL = "http://192.168.100.86/pdcs/pertemuan6/api/"
 
     fun getApiService(): ApiInterface {
         val loggingInterceptor = HttpLoggingInterceptor().apply {

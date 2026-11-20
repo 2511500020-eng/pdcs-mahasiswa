@@ -26,3 +26,15 @@ data class Mahasiswa(
     @SerializedName("jurusan")
     val jurusan: String
 )
+
+// Untuk GET by ID: data = object tunggal, bukan list
+data class MahasiswaDetailResponse(
+    @SerializedName("status")
+    val status: Boolean,
+
+    @SerializedName("message")
+    val message: String? = null,
+
+    @SerializedName("data")
+    val data: Mahasiswa? = null
+)
