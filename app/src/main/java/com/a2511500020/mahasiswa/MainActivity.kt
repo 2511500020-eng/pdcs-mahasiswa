@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
         // 2. Jalankan request jaringan secara asynchronous menggunakan Coroutine
         lifecycleScope.launch {
             try {
-                // eksekusi panggilan Retrofit di thread ID
+                // eksekusi panggilan Retrofit di thread I0
                 val response = withContext(Dispatchers.IO) {
                     ApiConfig.getApiService().getDaftarMahasiswa()
                 }
